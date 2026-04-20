@@ -1,24 +1,22 @@
-//
-//  ContentView.swift
-//  YandexPaySDKModularSDK
-//
-//  Created by Egor Kolobaev on 20.04.2026.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+
+  var body: some View {
+    NavigationStack {
+      List {
+        NavigationLink("Auth") {
+          AuthView()
         }
-        .padding()
+        NavigationLink("Quick Pay") {
+          QuickPayView(viewModel: .shared)
+        }
+      }
+      .navigationTitle("Modular SDK")
     }
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }

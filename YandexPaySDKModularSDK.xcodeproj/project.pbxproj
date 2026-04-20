@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0A2728582F96762300FD6E7C /* YandexPayAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0A2728572F96762300FD6E7C /* YandexPayAuth */; };
+		0A27285A2F96762300FD6E7C /* YandexPayConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = 0A2728592F96762300FD6E7C /* YandexPayConfiguration */; };
+		0A27285C2F96762300FD6E7C /* YandexQuickPay in Frameworks */ = {isa = PBXBuildFile; productRef = 0A27285B2F96762300FD6E7C /* YandexQuickPay */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		0A2728382F96733E00FD6E7C /* YandexPaySDKModularSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexPaySDKModularSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2728582F96762300FD6E7C /* YandexPayAuth in Frameworks */,
+				0A27285A2F96762300FD6E7C /* YandexPayConfiguration in Frameworks */,
+				0A27285C2F96762300FD6E7C /* YandexQuickPay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,9 @@
 			);
 			name = YandexPaySDKModularSDK;
 			packageProductDependencies = (
+				0A2728572F96762300FD6E7C /* YandexPayAuth */,
+				0A2728592F96762300FD6E7C /* YandexPayConfiguration */,
+				0A27285B2F96762300FD6E7C /* YandexQuickPay */,
 			);
 			productName = YandexPaySDKModularSDK;
 			productReference = 0A2728382F96733E00FD6E7C /* YandexPaySDKModularSDK.app */;
@@ -94,6 +106,9 @@
 			);
 			mainGroup = 0A27282F2F96733E00FD6E7C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0A2728562F96762300FD6E7C /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0A2728392F96733E00FD6E7C /* Products */;
 			projectDirPath = "";
@@ -328,6 +343,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A2728562F96762300FD6E7C /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yandexmobile/yandex-pay-private-repo.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A2728572F96762300FD6E7C /* YandexPayAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A2728562F96762300FD6E7C /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */;
+			productName = YandexPayAuth;
+		};
+		0A2728592F96762300FD6E7C /* YandexPayConfiguration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A2728562F96762300FD6E7C /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */;
+			productName = YandexPayConfiguration;
+		};
+		0A27285B2F96762300FD6E7C /* YandexQuickPay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A2728562F96762300FD6E7C /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */;
+			productName = YandexQuickPay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A2728302F96733E00FD6E7C /* Project object */;
 }
