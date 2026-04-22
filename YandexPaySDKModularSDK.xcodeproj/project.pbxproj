@@ -349,8 +349,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/yandexmobile/yandex-pay-private-repo.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = exactVersion;
+				version = "0.1.0";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
