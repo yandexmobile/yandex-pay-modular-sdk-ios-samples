@@ -1,4 +1,5 @@
 import SwiftUI
+import YandexPayConfiguration
 
 struct ContentView: View {
 
@@ -10,6 +11,18 @@ struct ContentView: View {
         }
         NavigationLink("Quick Pay") {
           QuickPayView(viewModel: .shared)
+        }
+        NavigationLink("Pay Widget") {
+          PayWidgetView()
+        }
+        NavigationLink("Redirects") {
+          RedirectsView()
+        }
+        NavigationLink("Inventory") {
+          InventoryView()
+        }
+        NavigationLink("Assistant") {
+          AssistantView()
         }
       }
       .navigationTitle("Modular SDK")
