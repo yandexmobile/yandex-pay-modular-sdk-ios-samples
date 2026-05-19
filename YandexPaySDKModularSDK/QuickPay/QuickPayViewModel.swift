@@ -33,7 +33,7 @@ final class QuickPayViewModel: ObservableObject, YQuickPaymentStateListener {
   }
 
   func loadInitialState() {
-    auth.addAuthStateObserver(self)
+    //auth.addAuthStateObserver(self)
     guard !isLoading else { return }
     isLoading = true
     Task { @MainActor in
@@ -53,7 +53,7 @@ final class QuickPayViewModel: ObservableObject, YQuickPaymentStateListener {
   }
 
   func cleanup() {
-    auth.removeAuthStateObserver(self)
+    //auth.removeAuthStateObserver(self)
     Task { await removeWidgetExpandObserver() }
   }
 
@@ -128,20 +128,20 @@ final class QuickPayViewModel: ObservableObject, YQuickPaymentStateListener {
 
   func fetchAuthState() {
     Task { @MainActor in
-      currentAuthState = await auth.getAuthState().displayName
+     // currentAuthState = await auth.getAuthState().displayName
     }
   }
 
   func fetchSecurityCheckRequired() {
-    Task { @MainActor in
-      do {
-        let required = try await auth.isSecurityCheckRequired()
-        securityCheckResult = required ? "Required" : "Not required"
-        lastError = nil
-      } catch {
-        lastError = String(describing: error)
-      }
-    }
+//    Task { @MainActor in
+//      do {
+//        let required = try await auth.isSecurityCheckRequired()
+//        securityCheckResult = required ? "Required" : "Not required"
+//        lastError = nil
+//      } catch {
+//        lastError = String(describing: error)
+//      }
+//    }
   }
 
   nonisolated func onPaymentEnabledStateChanged(isEnabled: Bool) {
@@ -165,29 +165,29 @@ final class QuickPayViewModel: ObservableObject, YQuickPaymentStateListener {
   }
 }
 
-extension QuickPayViewModel: YPAuthStateObserver {
-  nonisolated func onAuthStateChanged(_ state: YPAuthState) {
-    Task { @MainActor in
-      self.currentAuthState = state.displayName
-    }
-  }
-}
-
-private extension YPAuthState {
-  var displayName: String {
-    switch self {
-    case .notAuthorized: "Not authorized"
-    case .authorizationInProgress: "Authorization in progress"
-    case .accountAuthorized: "Account authorized"
-    case .securityCheckInProgress: "Security check in progress"
-    case .securityCheckRequired: "Security check required"
-    case .securityCheckCompleted: "Security check completed"
-    case .securityCheckFailed(let reason):
-      switch reason {
-      case .userCancelled: "Security check failed: user cancelled"
-      case .biometryNotAvailable: "Security check failed: biometry not available"
-      case .unknownError: "Security check failed: unknown error"
-      }
-    }
-  }
-}
+//extension QuickPayViewModel: YPAuthStateObserver {
+//  nonisolated func onAuthStateChanged(_ state: YPAuthState) {
+//    Task { @MainActor in
+//      self.currentAuthState = state.displayName
+//    }
+//  }
+//}
+//
+//private extension YPAuthState {
+//  var displayName: String {
+//    switch self {
+//    case .notAuthorized: "Not authorized"
+//    case .authorizationInProgress: "Authorization in progress"
+//    case .accountAuthorized: "Account authorized"
+//    case .securityCheckInProgress: "Security check in progress"
+//    case .securityCheckRequired: "Security check required"
+//    case .securityCheckCompleted: "Security check completed"
+//    case .securityCheckFailed(let reason):
+//      switch reason {
+//      case .userCancelled: "Security check failed: user cancelled"
+//      case .biometryNotAvailable: "Security check failed: biometry not available"
+//      case .unknownError: "Security check failed: unknown error"
+//      }
+//    }
+//  }
+//}

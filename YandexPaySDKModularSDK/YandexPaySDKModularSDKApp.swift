@@ -2,6 +2,10 @@ import SwiftUI
 import YandexPayConfiguration
 import YandexPayAuth
 import YandexQuickPay
+import YandexPayInventory
+import YandexPayInApp
+import YandexPayWithRedirect
+import YandexPayAssistant
 
 @main
 struct YandexPaySDKModularSDKApp: App {
@@ -24,7 +28,11 @@ struct YandexPaySDKModularSDKApp: App {
           stateListener: QuickPayViewModel.shared,
           merchant: merchant,
           presentationContextProvider: SamplePresentationContextProvider.shared
-        )
+        ),
+        YPayInventory.module(merchant: merchant),
+        YPayWithRedirect.module(merchant: merchant),
+        YPayInApp.module(merchant: merchant),
+        YPAssistantModule.module(merchant: merchant)
       ]
     )
   }
@@ -36,7 +44,7 @@ struct YandexPaySDKModularSDKApp: App {
   }
 }
 
-private final class SamplePresentationContextProvider: YPPresentationContextProviding {
+final class SamplePresentationContextProvider: YPPresentationContextProviding {
   static let shared = SamplePresentationContextProvider()
 
   func anchorForPresentation() -> YPPresentationContext {
