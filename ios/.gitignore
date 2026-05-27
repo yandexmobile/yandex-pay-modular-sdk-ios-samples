@@ -1,0 +1,39 @@
+# Xcode user data
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+
+# Xcode workspace user data
+project.xcworkspace/xcuserdata/
+
+# Xcode caches and derived data
+DerivedData/
+build/
+*.build/
+.build/
+
+# Xcode legacy user files
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+*.moved-aside
+
+# Swift Package Manager
+.swiftpm/
+.swiftpm/xcode/
+
+# CocoaPods (if ever used)
+Pods/
+*.xcworkspace/xcuserdata/
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode playground output
+timeline.xctimeline
+playground.xcplayground

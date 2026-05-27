@@ -1,0 +1,15 @@
+{
+  "originHash" : "139f5adbcc33d53b3e563d3685cc4e6399d3cae8f9256615106ba324e2cd6f1c",
+  "pins" : [
+    {
+      "identity" : "yandex-pay-private-repo",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yandexmobile/yandex-pay-private-repo.git",
+      "state" : {
+        "revision" : "a9b1db1247968291de81cc6987389678e5d3c8f8",
+        "version" : "0.6.5"
+      }
+    }
+  ],
+  "version" : 3
+}
