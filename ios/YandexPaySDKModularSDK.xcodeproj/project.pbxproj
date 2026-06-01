@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A35CF232FBCE0CB0062487F /* YandexPayAssistant in Frameworks */ = {isa = PBXBuildFile; productRef = 0A35CF222FBCE0CB0062487F /* YandexPayAssistant */; };
-		0A35CF252FBCE0CB0062487F /* YandexPayAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0A35CF242FBCE0CB0062487F /* YandexPayAuth */; };
-		0A35CF272FBCE0CB0062487F /* YandexPayConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = 0A35CF262FBCE0CB0062487F /* YandexPayConfiguration */; };
-		0A35CF292FBCE0CB0062487F /* YandexPayInApp in Frameworks */ = {isa = PBXBuildFile; productRef = 0A35CF282FBCE0CB0062487F /* YandexPayInApp */; };
-		0A35CF2B2FBCE0CB0062487F /* YandexPayInventory in Frameworks */ = {isa = PBXBuildFile; productRef = 0A35CF2A2FBCE0CB0062487F /* YandexPayInventory */; };
-		0A35CF2D2FBCE0CB0062487F /* YandexPayWithRedirect in Frameworks */ = {isa = PBXBuildFile; productRef = 0A35CF2C2FBCE0CB0062487F /* YandexPayWithRedirect */; };
-		0A35CF2F2FBCE0CB0062487F /* YandexQuickPay in Frameworks */ = {isa = PBXBuildFile; productRef = 0A35CF2E2FBCE0CB0062487F /* YandexQuickPay */; };
+		0AF6A35B2FC87084004B1C2F /* YandexPayAssistant in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF6A35A2FC87084004B1C2F /* YandexPayAssistant */; };
+		0AF6A35D2FC87084004B1C2F /* YandexPayAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF6A35C2FC87084004B1C2F /* YandexPayAuth */; };
+		0AF6A35F2FC87084004B1C2F /* YandexPayConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF6A35E2FC87084004B1C2F /* YandexPayConfiguration */; };
+		0AF6A3612FC87084004B1C2F /* YandexPayInApp in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF6A3602FC87084004B1C2F /* YandexPayInApp */; };
+		0AF6A3632FC87084004B1C2F /* YandexPayInventory in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF6A3622FC87084004B1C2F /* YandexPayInventory */; };
+		0AF6A3652FC87084004B1C2F /* YandexPayWithRedirect in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF6A3642FC87084004B1C2F /* YandexPayWithRedirect */; };
+		0AF6A3672FC87084004B1C2F /* YandexQuickPay in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF6A3662FC87084004B1C2F /* YandexQuickPay */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +33,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A35CF272FBCE0CB0062487F /* YandexPayConfiguration in Frameworks */,
-				0A35CF2F2FBCE0CB0062487F /* YandexQuickPay in Frameworks */,
-				0A35CF2B2FBCE0CB0062487F /* YandexPayInventory in Frameworks */,
-				0A35CF2D2FBCE0CB0062487F /* YandexPayWithRedirect in Frameworks */,
-				0A35CF292FBCE0CB0062487F /* YandexPayInApp in Frameworks */,
-				0A35CF252FBCE0CB0062487F /* YandexPayAuth in Frameworks */,
-				0A35CF232FBCE0CB0062487F /* YandexPayAssistant in Frameworks */,
+				0AF6A35F2FC87084004B1C2F /* YandexPayConfiguration in Frameworks */,
+				0AF6A3672FC87084004B1C2F /* YandexQuickPay in Frameworks */,
+				0AF6A3632FC87084004B1C2F /* YandexPayInventory in Frameworks */,
+				0AF6A3652FC87084004B1C2F /* YandexPayWithRedirect in Frameworks */,
+				0AF6A3612FC87084004B1C2F /* YandexPayInApp in Frameworks */,
+				0AF6A35D2FC87084004B1C2F /* YandexPayAuth in Frameworks */,
+				0AF6A35B2FC87084004B1C2F /* YandexPayAssistant in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,13 +90,13 @@
 			);
 			name = YandexPaySDKModularSDK;
 			packageProductDependencies = (
-				0A35CF222FBCE0CB0062487F /* YandexPayAssistant */,
-				0A35CF242FBCE0CB0062487F /* YandexPayAuth */,
-				0A35CF262FBCE0CB0062487F /* YandexPayConfiguration */,
-				0A35CF282FBCE0CB0062487F /* YandexPayInApp */,
-				0A35CF2A2FBCE0CB0062487F /* YandexPayInventory */,
-				0A35CF2C2FBCE0CB0062487F /* YandexPayWithRedirect */,
-				0A35CF2E2FBCE0CB0062487F /* YandexQuickPay */,
+				0AF6A35A2FC87084004B1C2F /* YandexPayAssistant */,
+				0AF6A35C2FC87084004B1C2F /* YandexPayAuth */,
+				0AF6A35E2FC87084004B1C2F /* YandexPayConfiguration */,
+				0AF6A3602FC87084004B1C2F /* YandexPayInApp */,
+				0AF6A3622FC87084004B1C2F /* YandexPayInventory */,
+				0AF6A3642FC87084004B1C2F /* YandexPayWithRedirect */,
+				0AF6A3662FC87084004B1C2F /* YandexQuickPay */,
 			);
 			productName = YandexPaySDKModularSDK;
 			productReference = 0A2728382F96733E00FD6E7C /* YandexPaySDKModularSDK.app */;
@@ -127,7 +127,7 @@
 			mainGroup = 0A27282F2F96733E00FD6E7C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				0A35CF212FBCE0CB0062487F /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */,
+				0AF6A3592FC87084004B1C2F /* XCRemoteSwiftPackageReference "yandex-pay-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0A2728392F96733E00FD6E7C /* Products */;
@@ -367,50 +367,50 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0A35CF212FBCE0CB0062487F /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */ = {
+		0AF6A3592FC87084004B1C2F /* XCRemoteSwiftPackageReference "yandex-pay-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/yandexmobile/yandex-pay-private-repo.git";
+			repositoryURL = "https://github.com/yandexmobile/yandex-pay-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 0.6.5;
+				version = "2.1.1";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0A35CF222FBCE0CB0062487F /* YandexPayAssistant */ = {
+		0AF6A35A2FC87084004B1C2F /* YandexPayAssistant */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A35CF212FBCE0CB0062487F /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */;
+			package = 0AF6A3592FC87084004B1C2F /* XCRemoteSwiftPackageReference "yandex-pay-ios" */;
 			productName = YandexPayAssistant;
 		};
-		0A35CF242FBCE0CB0062487F /* YandexPayAuth */ = {
+		0AF6A35C2FC87084004B1C2F /* YandexPayAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A35CF212FBCE0CB0062487F /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */;
+			package = 0AF6A3592FC87084004B1C2F /* XCRemoteSwiftPackageReference "yandex-pay-ios" */;
 			productName = YandexPayAuth;
 		};
-		0A35CF262FBCE0CB0062487F /* YandexPayConfiguration */ = {
+		0AF6A35E2FC87084004B1C2F /* YandexPayConfiguration */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A35CF212FBCE0CB0062487F /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */;
+			package = 0AF6A3592FC87084004B1C2F /* XCRemoteSwiftPackageReference "yandex-pay-ios" */;
 			productName = YandexPayConfiguration;
 		};
-		0A35CF282FBCE0CB0062487F /* YandexPayInApp */ = {
+		0AF6A3602FC87084004B1C2F /* YandexPayInApp */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A35CF212FBCE0CB0062487F /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */;
+			package = 0AF6A3592FC87084004B1C2F /* XCRemoteSwiftPackageReference "yandex-pay-ios" */;
 			productName = YandexPayInApp;
 		};
-		0A35CF2A2FBCE0CB0062487F /* YandexPayInventory */ = {
+		0AF6A3622FC87084004B1C2F /* YandexPayInventory */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A35CF212FBCE0CB0062487F /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */;
+			package = 0AF6A3592FC87084004B1C2F /* XCRemoteSwiftPackageReference "yandex-pay-ios" */;
 			productName = YandexPayInventory;
 		};
-		0A35CF2C2FBCE0CB0062487F /* YandexPayWithRedirect */ = {
+		0AF6A3642FC87084004B1C2F /* YandexPayWithRedirect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A35CF212FBCE0CB0062487F /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */;
+			package = 0AF6A3592FC87084004B1C2F /* XCRemoteSwiftPackageReference "yandex-pay-ios" */;
 			productName = YandexPayWithRedirect;
 		};
-		0A35CF2E2FBCE0CB0062487F /* YandexQuickPay */ = {
+		0AF6A3662FC87084004B1C2F /* YandexQuickPay */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A35CF212FBCE0CB0062487F /* XCRemoteSwiftPackageReference "yandex-pay-private-repo" */;
+			package = 0AF6A3592FC87084004B1C2F /* XCRemoteSwiftPackageReference "yandex-pay-ios" */;
 			productName = YandexQuickPay;
 		};
 /* End XCSwiftPackageProductDependency section */

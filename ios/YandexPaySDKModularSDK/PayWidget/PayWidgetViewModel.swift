@@ -72,6 +72,7 @@ extension PayWidgetViewModel: YPInAppDelegate {
       case .loading: self.widgetState = "loading"
       case .enabled: self.widgetState = "enabled"
       case .disabled(.disabledByConfig): self.widgetState = "disabled (config)"
+      case .disabled(.disabledByMerchant): self.widgetState = "disabled (merchant)"
       case .disabled(.unknown): self.widgetState = "disabled (unknown)"
       }
     }

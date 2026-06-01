@@ -1,13 +1,31 @@
 {
-  "originHash" : "139f5adbcc33d53b3e563d3685cc4e6399d3cae8f9256615106ba324e2cd6f1c",
+  "originHash" : "a00193e86ff4485dc4d6b50cef35c8b21b18b1354012ab4500641eb095629ddd",
   "pins" : [
     {
-      "identity" : "yandex-pay-private-repo",
+      "identity" : "appmetrica-sdk-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/yandexmobile/yandex-pay-private-repo.git",
+      "location" : "https://github.com/appmetrica/appmetrica-sdk-ios",
       "state" : {
-        "revision" : "a9b1db1247968291de81cc6987389678e5d3c8f8",
-        "version" : "0.6.5"
+        "revision" : "ed6c1a73eb2dae875a0d7801390eb6f0ee7bc12e",
+        "version" : "5.16.1"
+      }
+    },
+    {
+      "identity" : "kscrash",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kstenerud/KSCrash",
+      "state" : {
+        "revision" : "c0177658fc771ae833b6d3b8f5f3f5a14d59ec03",
+        "version" : "2.1.2"
+      }
+    },
+    {
+      "identity" : "yandex-pay-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yandexmobile/yandex-pay-ios.git",
+      "state" : {
+        "revision" : "486404d89340e4fa399f6440737ce1d891b77d4f",
+        "version" : "2.1.1"
       }
     }
   ],
